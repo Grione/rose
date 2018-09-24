@@ -1,0 +1,65 @@
+.section-features {
+    padding-top: rem(63px);
+}
+
+.features__list {
+    list-style: none;
+    display: flex;
+}
+
+.features__item {
+    width: 16%;
+    margin-right: rem(65px);
+    text-align: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
+        margin-right: 0;
+    }
+
+    @include phones {
+        margin-right: 0;
+    }
+}
+
+.features__icon-wrapp {
+    height: rem(83px);
+   text-align: center;
+   margin-bottom: rem(30px);
+}
+
+.features__icon {
+    max-width: 100%;
+    height: auto;
+
+    @include tablets {
+        display: inline-block !important;
+        height: 100%;
+    }
+    @include phones {
+        display: inline-block !important;
+        height: 100%;
+    }
+}
+
+.features__header {
+    font-family: 'PFD-Rg';
+    font-size: rem(24px);
+    color: #373830;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.features__love-line {
+    text-align: center;
+}
+
+.features__description {
+    font-size: rem(16px);
+    color: #373830;
+    margin-top: rem(10px);
+}

@@ -1,0 +1,72 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-color:  rgba(255, 255, 255, 0.85);
+    z-index: 200;
+    height: rem(64px);  
+    border-bottom: 2px solid #ba2557; 
+
+    @include tablets {
+        height: 7rem;
+    }
+
+    @include phones {
+        height: 7rem;
+    }
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablets {
+       flex-direction: column;
+    }
+
+    @include phones {
+        flex-direction: column;
+     }
+}
+
+.header__logo-link {
+    display: block;
+    width: 50%;
+}
+
+.header__logo {
+    width: 100%;
+    max-width: rem(238px);
+    height: auto;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__icon {
+    display: block;
+    height: 100%;
+    margin-right: rem(15px);
+}
+
+.icon__img {
+    width: 100%;
+    height: auto;
+}
+
+.icon-cursor-default {
+    cursor: default;
+}
+
+.header__phone {
+    text-decoration: none;
+    font-size: rem(22px);
+    color: #2f2f2f;
+    cursor: text;
+}
+
+.phone__red {
+    color: #ba2557;
+}

@@ -1,0 +1,177 @@
+.section-popular {
+    padding-top: rem(50px);
+
+}
+
+.popular__header {
+    font-family: 'PFD-Rg';
+    font-size: rem(36px);
+    color: #373830;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.popular__tabs {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.popular__tabs {
+    margin-top: rem(50px);
+    
+}
+
+.popular__tabs-link {
+    display: block;
+    width: rem(150px);
+    height: rem(39px);
+    font-size: rem(18px);
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: rem(39px);
+    text-align: center;
+    color: #373830;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.popular__tabs-link--active {
+    color:  #ffffff;
+    text-shadow: rem(1px) rem(2px) rem(0px) #c41621;
+    border-radius: rem(35px);
+    background-color: #ec121f;
+    box-shadow: rem(0px) rem(1px) rem(1px) rem(0px) #000000;
+    cursor: pointer;
+    &:hover {
+        background-color:#dd101b;
+    }
+}
+
+/////// tabs //////////////////
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.popular__tab-content {
+    padding-top: rem(40px);
+    
+    display: none;
+    animation: fadeEffect 1s;
+
+    @include tablets {
+        height: inherit;
+    }
+
+    @include phones {
+        height: inherit;
+    }
+}
+
+
+.tab__list {
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    
+}
+
+.tab__item {
+    position: relative;
+    width: rem(275px);
+    text-align: center;
+    padding: rem(40px) rem(25px) rem(25px) rem(25px);
+    background-color: #fff;
+    cursor: pointer;
+   
+    &:hover {
+        border-top: rem(1px) solid #cfcfcf;
+        border-right: rem(1px) solid #cfcfcf;
+        border-left: rem(1px) solid #cfcfcf;
+        box-shadow: rem(0px) rem(-5px) rem(10px) rem(0px) rgba(0, 0, 0, 0.25);
+    }
+
+    &:hover .tab__item__hover-box {
+        display: block;
+    }
+
+    &:hover .tab__list__hover-hidden {
+       visibility: hidden;
+    }
+
+    
+    @include tablets {
+        width: 13.1875rem;
+        padding: 2.5rem 0;
+        width: inherit;
+    }
+
+    @include phones {
+        width: 13.1875rem;
+        padding: 2.5rem 0.5rem;
+        width: inherit;
+    }
+}
+
+.tab__line {
+    display: inline-block;
+    width: 90%;
+    height: rem(2px);
+    background-color: #e1e1e1;
+    margin-top: rem(25px);
+}
+
+.tab__header {
+    font-size: rem(18px);
+    margin-top: rem(25px);
+    color: #373830;
+}
+
+.tab__description-size {
+    font-family: 'PFD-Rg';
+    font-size: rem(18px);
+    color: #ba2557;
+    margin-top: rem(13px);
+}
+
+.tab__description-size__option {
+    font-size: rem(16px);
+    color: #373830;
+    margin: rem(10px);
+}
+
+.tab__price {
+    font-family: 'ProximaNovaBold';
+    font-size: rem(18px);
+    color: #ba2557;
+    margin-bottom: rem(20px);
+}
+
+.tab__img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.tab__item__hover-box {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 220px;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    border-bottom: rem(1px) solid #cfcfcf;
+    box-shadow: rem(0px) rem(7px) rem(10px) rem(0px) rgba(0, 0, 0, 0.25);
+    padding-bottom: rem(25px);
+    z-index: 100;
+}
+
+
+

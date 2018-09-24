@@ -1,0 +1,33 @@
+
+@font-face {
+	font-family: 'ProximaNovaRg';
+	src: url('../font/ProximaNova/ProximaNova-Regular.eot');
+	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+		url('../font/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../font/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+		url('../font/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaBold';
+	src: url('../font/ProximaNova/ProximaNova-Bold.eot');
+	src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+		url('../font/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../font/ProximaNova/ProximaNova-Bold.woff') format('woff'),
+		url('../font/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PFD-Rg';
+    src: url('../font/PFD/PFDinTextCompPro-Regular.eot?#iefix') format('embedded-opentype'),  
+    url('../font/PFD/PFDinTextCompPro-Regular.woff') format('woff'), 
+    url('../font/PFD/PFDinTextCompPro-Regular.ttf')  format('truetype'), 
+    url('../font/PFD/PFDinTextCompPro-Regular.svg#PFDinTextCompPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }

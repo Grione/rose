@@ -1,0 +1,162 @@
+.section-hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/section_hero/bg.jpg);
+    background-size: cover;
+
+    @include phones {
+        height: calc(100vh - 7rem);
+    }
+    
+}
+
+.container-hero {
+    display: flex;
+    align-items: center;
+    
+}
+
+.hero__main {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+
+    @include tablets {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    @include phones {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+.hero__left {
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.hero__header {
+    text-transform: uppercase;
+    margin-top: rem(70px);
+    margin-bottom: rem(40px);
+
+    @include tablets {
+        margin-top: 1.375rem;
+        text-align: center;
+    }
+
+    @include phones {
+        margin-top: 1.375rem;
+        text-align: center;
+        margin-bottom: rem(15px);
+    }
+
+
+}
+
+.hero__header-top {
+    display: block;
+    font-family: "ProximaNovaBold";
+    font-size: rem(48px);
+    color: #2f2f2f;
+
+    @include tablets {
+        font-size: 2.5rem;
+    }
+
+    @include phones {
+        font-size: 2.5rem;
+    }
+}
+
+.hero__header-bottom {
+    font-size: rem(40px);
+    color: #2f2f2f;
+
+    @include tablets {
+        font-size: 1.5rem;
+    }
+
+    @include phones {
+        font-size: 2rem;
+    }
+
+}
+
+.hero__list {
+    margin-left: rem(20px);
+    font-weight: 700;
+}
+
+.hero__item {
+    color: #ba2557;
+    margin-bottom: rem(10px);
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+}
+
+.hero__item-span {
+    font-size: rem(24px);
+    color: #2f2f2f;
+    
+}
+
+.hero__button {
+    margin-top: rem(70px);
+
+    @include phones {
+        margin-top: rem(20px);
+    }
+}
+
+.hero__arrow {
+    position: absolute;
+    width: rem(28px);
+    height: rem(29px);
+    bottom: rem(18px);
+    left: 50%;
+    cursor: pointer;
+}
+
+.arrow__down {
+    width: 100%;
+    height: auto;
+}
+
+.hero-right {
+    width: 30%;
+
+    @include tablets {
+        width: 46%;
+    }
+
+    @include phones {
+        width: 50%;
+    }
+}
+
+.hero__img-wrapper {
+    width: 100%;
+}
+
+.hero__img{
+    width: 100%;
+    height: auto;
+}
+
+

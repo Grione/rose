@@ -1,0 +1,49 @@
+.section-present {
+    height: rem(578px);
+    background-image: url(../img/section-present/bg.jpg);
+    background-position: center;
+    padding-top: rem(60px);
+    margin-top: 25px;
+}
+
+.container-present {
+    position: relative;
+}
+
+.present__header {
+    text-align: center;
+    font-family: 'PFD-Rg';
+    font-size: rem(36px);
+    color: #373830;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.present__pack-block {
+    position: absolute;
+    bottom: rem(215px);
+    right: rem(50px);
+
+    @include phones {
+        text-align: right;
+    }
+}
+
+.pack__span {
+    font-size: rem(36px);
+    color: #373830;
+
+    @include phones {
+        display: block;
+    }
+}
+
+.pack__price {
+    font-family: 'ProximaNovaBold';
+    font-size: rem(36px);
+    color: #ba2557;
+}
+
+.button__present {
+    margin-top: rem(35px);
+}
